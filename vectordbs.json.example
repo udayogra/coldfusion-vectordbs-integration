@@ -1,0 +1,10 @@
+{
+  "dbType": "qdrant",
+  "pinecone": {
+    "apiKey": "YOUR_PINECONE_API_KEY"
+  },
+  "qdrant": {
+    "apiKey": "YOUR_QDRANT_API_KEY",
+    "host": "YOUR_QDRANT_HOST_URL"
+  }
+} 
