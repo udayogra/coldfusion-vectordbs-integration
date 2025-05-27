@@ -55,14 +55,7 @@ var collectionName = "my_collection";
 // Create a client (will create the bucket if it doesn't exist)
 var client = new factory.VectorDBFactory().getClient(
     configPath,
-    collectionName,
-    {
-        "createIfMissing": true,
-        "dimension": 1536,
-        "metric": "dotproduct", // or "cosine", "euclidean", etc.
-        // For Pinecone only:
-        "spec": {"serverless": {"cloud": "aws", "region": "us-east-1"}}
-    }
+    collectionName
 );
 
 // Generate a random vector
